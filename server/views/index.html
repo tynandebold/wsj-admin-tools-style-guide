@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" value="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WSJ Admin Tools Style Guide</title>
+    <link rel="shortcut icon" href="//www.wsj.com/apple-touch-icon.png" />
+
+    <script type="text/javascript"> loadjs = (function() { function e(e, n) { var t, r, i, c = [], o = (e = e.push ? e : [e]).length, f = o; for ( t = function(e, t) { t.length && c.push(e), --f || n(c); }; o--; ) (r = e[o]), (i = s[r]) ? t(r, i) : (u[r] = u[r] || []).push(t); } function n(e, n) { if (e) { var t = u[e]; if (((s[e] = n), t)) for (; t.length; ) t[0](e, n), t.splice(0, 1); } } function t(e, n, r, i) { var o, s, u = document, f = r.async, a = (r.numRetries || 0) + 1, h = r.before || c; (i = i || 0), /(^css!|\.css$)/.test(e) ? ((o = !0), ((s = u.createElement("link")).rel = "stylesheet"), (s.href = e.replace(/^css!/, ""))) : (((s = u.createElement("script")).src = e), (s.async = void 0 === f || f)), (s.onload = s.onerror = s.onbeforeload = function(c) { var u = c.type[0]; if (o && "hideFocus" in s) try { s.sheet.cssText.length || (u = "e"); } catch (e) { u = "e"; } if ("e" == u && (i += 1) < a) return t(e, n, r, i); n(e, u, c.defaultPrevented); }), !1 !== h(e, s) && u.head.appendChild(s); } function r(e, n, r) { var i, c, o = (e = e.push ? e : [e]).length, s = o, u = []; for ( i = function(e, t, r) { if (("e" == t && u.push(e), "b" == t)) { if (!r) return; u.push(e); } --o || n(u); }, c = 0; c < s; c++ ) t(e[c], i, r); } function i(e, t, i) { var s, u; if ((t && t.trim && (s = t), (u = (s ? i : t) || {}), s)) { if (s in o) throw "LoadJS"; o[s] = !0; } r( e, function(e) { e.length ? (u.error || c)(e) : (u.success || c)(), n(s, e); }, u ); } var c = function() {}, o = {}, s = {}, u = {}; return ( (i.ready = function(n, t) { return ( e(n, function(e) { e.length ? (t.error || c)(e) : (t.success || c)(); }), i ); }), (i.done = function(e) { n(e, []); d; }), (i.reset = function() { (o = {}), (s = {}), (u = {}); }), (i.isDefined = function(e) { return e in o; }), i ); })(); </script>
+
+    <script type="text/javascript">
+      loadjs([
+        "css!https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700",
+        "css!https://fonts.googleapis.com/css?family=Roboto+Mono",
+        "css!/css/prism.css",
+        "css!/css/guide.css"
+      ]);
+    </script>
+
+    <link rel="stylesheet" href="/css/wsj-admin-tools-theme.1.0.0.min.css" />
+  </head>
+  <body>
+    <header class="product-header">
+      <h2 class="product-header__name">
+        <a href="/">WSJ Admin Tools Style Guide</a>
+      </h2>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h6 class="label label--section">Introduction</h6>
+        <h2>WSJ Admin Tools Style Guide</h2>
+        <p>
+          This style guide aims to baseline all WSJ tools styles. Our web apps
+          have been rife with inconsistencies. The goal of this page and the
+          included materials is to put an end to that.
+        </p>
+        <p>
+          To view the markup of a component, click the
+          <span class="code-img"></span> icon.
+        </p>
+      </section>
+
+      {% include "structure.html" %} {% include "headers.html" %} {% include
+      "intro.html" %} {% include "tables.html" %} {% include "forms.html" %} {%
+      include "search.html" %} {% include "links.html" %} {% include
+      "typography.html" %} {% include "buttons.html" %} {% include
+      "toaster.html" %} {% include "card.html" %} {% include "footer.html" %} {%
+      include "pagination.html" %} {% include "formatting.html" %}
+
+      <div class="sidebar">
+        <div class="sidebar__intro">Jump to:</div>
+        <span class="sidebar__term--small">
+          <a class="link" href="#structure">Structure</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#headers">Headers</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#intros">Intros</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#tables">Tables</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#forms">Forms</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#search">Search</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#links">Links</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#typography">Typography</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#buttons">Buttons</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#toaster">Toaster</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#cards">Cards</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#footer">Footer</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#pagination">Pagination</a>
+        </span>
+        <span class="sidebar__term--small">
+          <a class="link" href="#formatting">Formatting</a>
+        </span>
+        <span class="sidebar__term--small sidebar__term--top">
+          <a class="link" href="#">Top ↑</a>
+        </span>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      loadjs(
+        [
+          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+          "https://cdn.rawgit.com/ZitRos/toaster-js/master/umd.js",
+          "/js/prism.js",
+          "/js/index.js"
+        ],
+        {
+          async: false
+        }
+      );
+    </script>
+  </body>
+</html>

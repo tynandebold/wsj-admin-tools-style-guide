@@ -1,0 +1,255 @@
+<section id="forms">
+  <h6 class="label label--section">Forms</h6>
+  <h2>Forms and Text Fields</h2>
+  <p>These components allow users to input, edit, and select text.</p>
+  <p>The layout of a form is left to the desires of the developer. Below, the layout of item #1 has been customized, while the layout of item #2 is what the form component will look like off the shelf.</p>
+
+  <h6 class="label label--primary">1. Inputs and labels, horizontal layout</h6>
+  <span class="code-img"></span>
+  <form class="form">
+    <div class="form__input-wrapper">
+      <span class="smalltext">First name*</span>
+      <input class="input" type="text" name="first_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Last name*</span>
+      <input class="input" type="text" name="last_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Email*</span>
+      <input class="input" type="text" name="email" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Website</span>
+      <input class="input" type="text" name="website" value="">
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;First name*&lt;/span&gt;
+          &lt;input class="input" type="text" name="first_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Last name*&lt;/span&gt;
+          &lt;input class="input" type="text" name="last_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Email*&lt;/span&gt;
+          &lt;input class="input" type="text" name="email" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Website&lt;/span&gt;
+          &lt;input class="input" type="text" name="website" value=""&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">2. Inputs and labels, vertical layout</h6>
+  <span class="code-img"></span>
+  <form class="form form--vertical">
+    <div class="form__input-wrapper">
+      <span class="smalltext">First name*</span>
+      <input class="input" type="text" name="first_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Last name*</span>
+      <input class="input" type="text" name="last_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Email*</span>
+      <input class="input" type="text" name="email" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Website</span>
+      <input class="input" type="text" name="website" value="">
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form form--vertical"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;First name*&lt;/span&gt;
+          &lt;input class="input" type="text" name="first_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Last name*&lt;/span&gt;
+          &lt;input class="input" type="text" name="last_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Email*&lt;/span&gt;
+          &lt;input class="input" type="text" name="email" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Website&lt;/span&gt;
+          &lt;input class="input" type="text" name="website" value=""&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+    </pre>
+
+  <h6 class="label label--primary">3. Inputs and labels with errors</h6>
+  <span class="code-img"></span>
+  <form class="form">
+    <div class="form__input-wrapper">
+      <span class="smalltext">First name*</span>
+      <input class="input input--error" type="text" name="first_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Last name*</span>
+      <input class="input input--error" type="text" name="last_name" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Email*</span>
+      <input class="input input--error" type="text" name="email" value="">
+    </div>
+    <div class="form__input-wrapper">
+      <span class="smalltext">Website</span>
+      <input class="input" type="text" name="website" value="">
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;First name*&lt;/span&gt;
+          &lt;input class="input input--error" type="text" name="first_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Last name*&lt;/span&gt;
+          &lt;input class="input input--error" type="text" name="last_name" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Email*&lt;/span&gt;
+          &lt;input class="input input--error" type="text" name="email" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;Website&lt;/span&gt;
+          &lt;input class="input" type="text" name="website" value=""&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">4. Read-only input</h6>
+  <span class="code-img"></span>
+  <form class="form">
+    <div class="form__input-wrapper">
+      <span class="smalltext">First name*</span>
+      <input class="input" type="text" value="Bart" readonly tabindex="-1">
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;span class="smalltext"&gt;First name*&lt;/span&gt;
+          &lt;input class="input" type="text" value="Bart" readonly tabindex="-1"&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">5. Checkboxes</h6>
+  <span class="code-img"></span>
+  <form class="form">
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="photographer" value="photographer">
+      <label for="photographer" id="photog-label">Photographer</label>
+    </div>
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="stylist" value="stylist">
+      <label for="stylist" id="">Stylist</label>
+    </div>
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="makeup" value="makeup">
+      <label for="makeup" id="">Makeup</label>
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;input type="checkbox" name="types" id="photographer" value="photographer"&gt;
+          &lt;label for="photographer" id="photog-label"&gt;Photographer&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          ...
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">6. Checkboxes with label</h6>
+  <span class="code-img"></span>
+  <form class="form" style="flex-wrap: wrap;">
+    <h6 class="label label--secondary" style="flex: 0 0 auto; flex-wrap: wrap;">Creative type:</h6>
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="photographer-1" value="photographer-1">
+      <label for="photographer-1" id="photog-label">Photographer</label>
+    </div>
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="stylist-1" value="stylist-1">
+      <label for="stylist-1" id="">Stylist</label>
+    </div>
+    <div class="form__input-wrapper">
+      <input type="checkbox" name="types" id="makeup-1" value="makeup-1">
+      <label for="makeup-1" id="">Makeup</label>
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;h6 class="label label--secondary"&gt;Creative type:&lt;/h6&gt;
+      &lt;form class="form"&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          &lt;input type="checkbox" name="types" id="photographer" value="photographer"&gt;
+          &lt;label for="photographer" id="photog-label"&gt;Photographer&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form__input-wrapper"&gt;
+          ...
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">7. Select box (dropdown)</h6>
+  <span class="code-img"></span>
+  <form class="form">
+    <div class="form__select-wrapper">
+      <select>
+        <option disabled selected>Select a section</option>
+        <option value="world">World</option>
+        <option value="us">U.S.</option>
+        <option value="politics">Politics</option>
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+        <option value="markets">Markets</option>
+        <option value="arts">Arts</option>
+      </select>
+    </div>
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="form"&gt;
+        &lt;div class="form__select-wrapper"&gt;
+          &lt;select&gt;
+            &lt;option disabled selected&gtSelect a section&lt;/option&gt;
+            &lt;option value="world"&gtWorld&lt;/option&gt;
+            &lt;option value="us"&gtU.S.&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">8. Text area</h6>
+  <span class="code-img"></span>
+  <textarea class="input" rows="8" cols="150" placeholder="Placeholder text for the text area."></textarea>
+  <pre>
+    <code class="language-markup">
+      &lt;textarea class="input" name="email_text" rows="8" cols="150" placeholder="Placeholder text for the text area."&gt;&lt;/textarea&gt;
+    </code>
+  </pre>
+</section>

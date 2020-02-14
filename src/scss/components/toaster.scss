@@ -1,0 +1,32 @@
+.toast {
+  /*bottom: 12px !important;*/
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 10px;
+  position: fixed;
+  right: 16px;
+  transition: 0.3s all ease-in;
+
+  & .body {
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.04),
+                0 2px 2px -5px rgba(0,0,0,.025),
+                0 2px 2px 0 rgba(0,0,0,.025);
+    padding: 12px 30px;
+  }
+
+  & .done {
+    background-color: var(--dj-green);
+  }
+
+  & .error {
+    background-color: var(--dj-red);
+    color: #fff;
+  }
+
+  & .message {
+    background-color: #fff;
+    border: 2px solid var(--dj-grey-dark);
+    color: var(--dj-black);
+  }
+}

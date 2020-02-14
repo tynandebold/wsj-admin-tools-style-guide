@@ -1,0 +1,39 @@
+.search-form {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.search {
+  position: relative;
+
+  & .search__btn-wrapper {
+    margin-bottom: 10px;
+  }
+
+  & .search__btn-wrapper div {
+    display: inline-block;
+  }
+
+  & .search__btn-wrapper label {
+    font-size: 12px;
+  }
+
+  & .search__btn-wrapper .pattern-label {
+    margin-bottom: 2px;
+  }
+
+  & .search__btn-wrapper label:first-of-type {
+    margin-right: 10px;
+  }
+
+  & .search__help-link{
+    font-size: 10.5px;
+    position: absolute;
+  }
+
+  & .search-form__help {
+    left: 273px;
+    top: 8px;
+  }
+}

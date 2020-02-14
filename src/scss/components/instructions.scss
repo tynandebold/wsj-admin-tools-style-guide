@@ -1,0 +1,43 @@
+.instructions {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 2px solid #dee1e0;
+  font-weight: 400;
+  opacity: 0;
+  padding: 15px 20px 12px;
+  pointer-events: none;
+  position: absolute;
+  left: 99px;
+  top: 90px;
+  transition: 0.3s opacity ease-in;
+  z-index: 1;
+}
+
+.instructions.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.instructions__intro {
+  border-bottom: 1px solid #dee1e0;
+  font-weight: 300;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+}
+
+.instructions__term {
+  font-weight: 400;
+  padding: 5px 0 0;
+}
+
+.instructions__term--small {
+  font-size: 10.5px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.instructions__close {
+  left: auto;
+  right: 5px;
+  top: 17px;
+}

@@ -1,0 +1,27 @@
+.label {
+  color: var(--dj-blue);
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.label--primary {
+  margin: 0 5px 5px 0;
+  width: auto;
+}
+
+.label--secondary {
+  clear: both;
+  color: #959595;
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+
+.label--section {
+  border-bottom: 1px solid #ccc;
+  color: #8D9CA9;
+  margin: 12px 0;
+  padding-bottom: 2px;
+  width: 100%;
+}

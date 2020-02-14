@@ -1,0 +1,29 @@
+<section id="formatting">
+  <h6 class="label label--section">Formatting</h6>
+  <h2>Formatting</h2>
+  <p>Reference these snippets to format dates and times.</p>
+  <h6 class="label label--primary">1. Postgresql date formatting</h6>
+  <p>
+    <span class="inline-code">to_char(timestamp, 'Mon DD, YYYY')</span> outputs
+    <strong>Apr 25, 2018</strong>.
+  </p>
+  <p>
+    <span class="inline-code">to_char(timestamp, 'Dy, Mon DD, YYYY')</span> outputs
+    <strong>Wed, Apr 25, 2018</strong>.
+  </p>
+  <p>
+    <span class="inline-code">to_char(timestamp, 'Dy, Mon DD, YYYY FMHH:MI am')</span> outputs
+    <strong>Wed, Apr 25, 2018 4:00 pm</strong>.
+  </p>
+  <h6 class="label label--primary">2. Moment.js date formatting</h6>
+  <p>
+    <span class="inline-code">moment(timestamp).format('MMM DD, YYYY')</span> outputs
+    <strong>Apr 25, 2018</strong>.
+  </p>
+  <p>
+    <span class="inline-code">moment(timestamp).format('ddd, MMM DD, YYYY')</span> outputs <strong>Wed, Apr 25, 2018</strong>.
+  </p>
+  <p>
+    <span class="inline-code">moment(timestamp).format('ddd, MMM DD, YYYY h:mm a')</span> outputs <strong>Wed, Apr 25, 2018 4:00 pm</strong>.
+  </p>
+</section>

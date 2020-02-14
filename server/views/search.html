@@ -1,0 +1,90 @@
+<section id="search">
+  <h6 class="label label--section">Search</h6>
+  <h2>Search Box and Submit Button</h2>
+  <p>For when you'll prompt a user to look up a record within your app.</p>
+  <p>Note: the second example contains optional features (radio buttons to change search type, help link to toggle instructions for advanced searches, typeahead styles). Use as needed.</p>
+  <h6 class="label label--primary">1. Search and submit</h6>
+  <span class="code-img"></span>
+  <form class="search-form">
+    <input class="input" type="text" name="search" placeholder="Placeholder text">
+    <input class="btn btn--primary" type="submit" value="Search!">
+  </form>
+  <pre>
+    <code class="language-markup">
+      &lt;form class="search-form"&gt;
+        &lt;input class="input" type="text" name="search" placeholder="Placeholder text"&gt;
+        &lt;input class="btn btn--primary" type="submit" value="Search!"&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+  <h6 class="label label--primary">2. Search and submit with types</h6>
+  <span class="code-img"></span>
+  <div class="search">
+    <div class="search__btn-wrapper">
+      <h6 class="label label--secondary">Search by:</h6>
+      <div>
+        <input type="radio" id="location" name="search" checked>
+        <label for="location" class="search__filter-buttons">Location</label>
+      </div>
+      <div>
+        <input type="radio" id="name" name="search">
+        <label for="name" class="search__filter-buttons">Name</label>
+      </div>
+    </div>
+    <form class="search-form">
+      <input class="input" type="text" name="search" placeholder="Placeholder text">
+      <input class="btn btn--primary" type="submit" value="Search!">
+      <span class="search-form__help search__help-link">
+        <a class="link" href="#">Help</a>
+      </span>
+    </form>
+    <div class="instructions">
+      <div class="instructions__intro">Advanced search capabilities</div>
+      <div class="instructions__term">
+        <span class="instructions__term--small">By slug:</span> slug:stocks-tracker-2017
+      </div>
+      <div class="instructions__term">
+        <span class="instructions__term--small">By creator:</span> creator:Colleen Mcenaney
+      </div>
+      <span class="instructions__close search__help-link">
+        <a class="link" href="#">Close</a>
+      </span>
+    </div>
+  </div>
+  <pre>
+    <code class="language-markup">
+      &lt;div class="search"&gt;
+        &lt;div class="search__btn-wrapper"&gt;
+          &lt;h6 class="label label--secondary"&gt;Search by:&lt;/h6&gt;
+          &lt;div&gt;
+            &lt;input type="radio" id="location" name="search" checked&gt;
+            &lt;label for="location" class="search__filter-buttons"&gt;Location&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;input type="radio" id="name" name="search"&gt;
+            &lt;label for="name" class="search__filter-buttons"&gt;Name&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;form class="search-form"&gt;
+          &lt;input class="input" type="text" name="search" placeholder="Placeholder text"&gt;
+          &lt;input class="btn btn--primary" type="submit" value="Search!"&gt;
+          &lt;span class="search-form__help search__help-link"&gt;
+            &lt;a class="link" href="#"&gt;Help&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/form&gt;
+        &lt;div class="instructions"&gt;
+          &lt;div class="instructions__intro"&gt;Advanced search capabilities&lt;/div&gt;
+          &lt;div class="instructions__term"&gt;
+            &lt;span class="instructions__term--small"&gt;By slug:&lt;/span&gt; slug:stocks-tracker-2017
+          &lt;/div&gt;
+          &lt;div class="instructions__term"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;span class="instructions__close search__help-link"&gt;
+            &lt;a class="link" href="#"&gt;Close&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
+</section>

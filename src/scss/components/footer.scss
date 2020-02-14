@@ -1,0 +1,15 @@
+footer {
+  background-color: #e3e3e3;
+  border-top: 2px solid #ccc;
+  padding: 25px;
+  text-align: center;
+
+  & p {
+    margin: 0 0 10px;
+    max-width: none;
+  }
+
+  & a.link {
+    margin: 0;
+  }
+}

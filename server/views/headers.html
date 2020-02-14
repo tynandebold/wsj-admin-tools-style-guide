@@ -1,0 +1,80 @@
+<section id="headers">
+  <h6 class="label label--section">Headers</h6>
+  <h2>Header Components</h2>
+  <p>There are three header styles: 1. normal; 2. normal plus a button; 3. normal plus a button and search box.</p>
+
+  <h6 class="label label--primary">1. Normal</h6>
+  <span class="code-img"></span>
+  <header class="product-header">
+    <h2 class="product-header__name">
+      <a href="/">App Name Here</a>
+    </h2>
+  </header>
+  <pre>
+    <code class="language-markup">
+      &lt;header class="product-header"&gt;
+        &lt;h2 class="product-header__name"&gt;
+          &lt;a href="/"&gt; App Name Here&lt;/a&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">2. With button</h6>
+  <span class="code-img"></span>
+  <header class="product-header">
+    <h2 class="product-header__name">
+      <a href="/">App Name Here</a>
+    </h2>
+    <a href="/">
+      <button class="btn btn--primary">Header Button</button>
+    </a>
+  </header>
+  <pre>
+    <code class="language-markup">
+      &lt;header class="product-header"&gt;
+        &lt;h2 class="product-header__name"&gt;
+          &lt;a href="/"&gt;App Name Here&lt;/a&gt;
+        &lt;/h2&gt;
+        &lt;a href="/"&gt;
+          &lt;button class="btn btn--primary"&gt;Header Button&lt;/button&gt;
+        &lt;/a&gt;
+      &lt;/header&gt;
+    </code>
+  </pre>
+
+  <h6 class="label label--primary">3. With button and search</h6>
+  <span class="code-img"></span>
+  <header class="product-header">
+    <div class="product-header__links">
+      <h2 class="product-header__name">
+        <a href="/">App Name Here</a>
+      </h2>
+      <a href="/project">
+        <button class="btn btn--primary">Header Button</button>
+      </a>
+    </div>
+    <form class="search-form">
+      <input class="input" type="text" name="search" placeholder="Placeholder text">
+      <input class="btn btn--primary" type="submit" value="Search!">
+    </form>
+  </header>
+  <pre>
+    <code class="language-markup">
+      &lt;header class="product-header"&gt;
+        &lt;div class="product-header__links"&gt;
+          &lt;h2 class="product-header__name"&gt;
+            &lt;a href="/"&gt;App Name Here&lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;a href="/project"&gt;
+            &lt;button class="btn btn--primary"&gt;Header Button&lt;/button&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;form class="search-form"&gt;
+          &lt;input class="input" type="text" name="search" placeholder="Placeholder text"&gt;
+          &lt;input class="btn btn--primary" type="submit" value="Search!"&gt;
+        &lt;/form&gt;
+      &lt;/header&gt;
+    </code>
+  </pre>
+</section>

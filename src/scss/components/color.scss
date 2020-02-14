@@ -1,0 +1,18 @@
+:root {
+  --dj-blue: #67b6e4;
+  --dj-blue-light: color(var(--dj-blue) tint(25%)); /* #41ABE0 */
+  --dj-blue-dark: color(var(--dj-blue) shade(25%)); /* #028FBB */
+  --dj-red: #e34c53;
+  --dj-red-dark: color(var(--dj-red) shade(10%)); /* #cc444b */
+  --dj-green: #13df81;
+  --dj-yellow: #f0c043;
+  --dj-black: #333333;
+  --dj-grey: #f6f6f6;
+  --dj-grey-light: color(var(--dj-grey) tint(50%)); /* #FAFAFA */
+  --dj-grey-dark: color(var(--dj-grey) shade(25%)); /* #B7B7B7 */
+  --dj-grey-2: #999;
+  --dj-grey-3: #ccc;
+  --dj-grey-4: #eaeaea;
+  --dj-link-blue: #589cc3;
+  --dj-link-blue-dark: color(var(--dj-link-blue) shade(25%)); /* #37769b */
+}

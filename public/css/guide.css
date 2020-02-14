@@ -1,0 +1,200 @@
+/*
+ *
+ * THIS PAGE HOUSES STYLES FOR THE STYLE GUIDE ONLY.
+ * THESE STYLES DON'T PERTAIN TO THE COMPONENTS AS THEY'LL APPEAR IN AN APP.
+ *
+ */
+
+body {
+  position: relative;
+}
+
+section {
+  margin-bottom: 60px !important;
+  margin-left: 110px !important;
+}
+
+#headers h6:nth-of-type(3),
+#headers h6:nth-of-type(4),
+#tables h6:nth-of-type(3),
+#tables h6:nth-of-type(4),
+#links h6:nth-of-type(3),
+#links h6:nth-of-type(4),
+#search h6:nth-of-type(3),
+#toaster h6:nth-of-type(3),
+#toaster h6:nth-of-type(4),
+.btn-wrapper h6,
+#forms h6:nth-of-type(3),
+#forms h6:nth-of-type(4),
+#forms h6:nth-of-type(5),
+#forms h6:nth-of-type(6),
+#forms h6:nth-of-type(7),
+#forms h6:nth-of-type(8),
+#forms h6:nth-of-type(9),
+#typography h6:nth-of-type(3),
+#typography h6:nth-of-type(4),
+#typography h6:nth-of-type(6),
+#typography h6:nth-of-type(8) {
+  margin-top: 30px;
+}
+
+.btns-wrapper .btn-wrapper:first-child h6 {
+  margin-top: 0;
+}
+
+#headers pre,
+#tables pre,
+#links pre,
+#pagination pre,
+#search pre,
+#toaster pre,
+#buttons pre,
+#forms pre,
+#typography pre,
+#footer pre,
+#cards pre {
+  display: none;
+}
+
+pre.show {
+  display: block !important;
+}
+
+.code-img {
+  background-image: url('../images/code.svg');
+  border-radius: 2px;
+  display: inline-block;
+  height: 22px;
+  margin-bottom: -6px;
+  margin-left: -5px;
+  width: 22px;
+}
+
+.code-img:hover {
+  cursor: pointer;
+}
+
+.intro .code-img {
+  height: 30px;
+  margin-bottom: -9px;
+  margin-left: 0px;
+  margin-right: -2px;
+  width: 30px;
+}
+
+.intro p:last-of-type {
+  background-color: #fafafa;
+  border: 2px solid #67b6e4;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.075), 0 1px 2px 1px rgba(0,0,0,.075), 0 1px 2px 0 rgba(0,0,0,.075);
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 10px 12px;
+  max-width: 100%;
+}
+
+#links .link {
+  display: block;
+  padding: 5px 0;
+}
+
+#search input.input {
+  width: 300px;
+}
+
+#toaster .toast {
+  bottom: auto !important;
+  position: relative;
+  right: auto;
+  top: auto;
+  width: max-content;
+}
+
+#toaster a.link {
+  margin: 0;
+}
+
+.btns-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-wrapper .btn {
+  display: block;
+}
+
+#forms form:first-of-type {
+  flex-wrap: wrap;
+}
+
+#forms form:first-of-type .form__input-wrapper {
+  margin: 0 10px 5px 0;
+  width: calc(50% - 5px);
+}
+
+#forms form:first-of-type .form__input-wrapper:nth-of-type(even) {
+  margin-right: 0;
+}
+
+#forms .form__select-wrapper select {
+  width: 140px;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-radius: 2px;
+  border-right: 2px solid #dee1e0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  height: 100vh;
+  left: 0;
+  padding: 15px 20px 12px;
+  position: fixed;
+  top: 50px;
+  z-index: 1;
+}
+
+.sidebar__intro {
+  border-bottom: 1px solid #dee1e0;
+  font-weight: 300;
+  margin-bottom: 5px;
+  padding: 0 0 2px;
+}
+
+.sidebar__term--small {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 5px 0 0;
+  text-transform: uppercase;
+}
+
+.sidebar__term--small a {
+  font-weight: 600;
+  margin: 0;
+}
+
+.sidebar__term--top {
+  display: none;
+}
+
+#toaster .link {
+  cursor: pointer;
+  margin: 0;
+}
+
+#typography .big-number {
+  display: block;
+}
+
+#typography p:last-of-type {
+  margin-bottom: 0;
+}
+
+#cards .card--content p:last-child {
+  margin: 15px 0 0;
+}
+
+#cards .card--header {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,121 @@
+.form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form--vertical {
+  flex-direction: column;
+
+  & .form__input-wrapper {
+    margin: 0 0 10px 0;
+  }
+}
+
+.form__input-wrapper {
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+.form__select-wrapper {
+  position: relative;
+
+  &:after {
+    content: "▾";
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+  }
+
+  & select {
+    -webkit-appearance: none;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #dee1e0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04),
+      0 1px 1px -5px rgba(0, 0, 0, 0.025), 0 1px 2px 0 rgba(0, 0, 0, 0.025);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 10px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.input {
+  border-radius: 0;
+  border: 1px solid #dee1e0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04),
+    0 1px 1px -5px rgba(0, 0, 0, 0.025), 0 1px 2px 0 rgba(0, 0, 0, 0.025);
+  color: var(--dj-black);
+  display: block;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px 10px;
+  transition: all 0.15s ease-in-out;
+  width: 100%;
+
+  &:focus {
+    border: 1px solid var(--dj-blue);
+    outline: 0;
+  }
+}
+
+.input[readonly] {
+  background-color: #eef0f0;
+  pointer-events: none;
+}
+
+.input--error {
+  border-color: var(--dj-red);
+  color: var(--dj-black);
+}
+
+.smalltext {
+  margin-left: 1px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="checkbox"] + label {
+  border: 1px solid #8d9ca9;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08),
+    0 1px 1px -5px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  color: #8d9ca9;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 15px;
+  text-align: center;
+  transition: all 0.15s ease-in-out;
+  width: 127px;
+}
+
+input[type="checkbox"] + label:hover,
+input[type="checkbox"] + label:hover {
+  background: #8d9ca9;
+  border-color: #8d9ca9;
+  color: #fff;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:checked + label {
+  background: #8d9ca9;
+  border-color: #8d9ca9;
+  color: #fff;
+}
+
+.search-form {
+  width: auto;
+
+  & .input {
+    margin-right: 10px;
+  }
+}

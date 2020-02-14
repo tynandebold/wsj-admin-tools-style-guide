@@ -1,0 +1,37 @@
+.pagination {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+
+  & li {
+    border-radius: 2px;
+    display: inline-block;
+    height: 30px;
+    outline: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  & li a {
+    border: 1px solid transparent;
+    color: #444;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 25px;
+    outline: 0;
+    padding: 0 7px;
+    text-decoration: none;
+    transition: color .15s ease;
+  }
+
+  & li a:hover,
+  & li:hover {
+    color: var(--dj-blue);
+    cursor: pointer;
+  }
+
+  & li a.current,
+  & li.current a {
+    border: 1px solid var(--dj-blue);
+    color: var(--dj-blue);
+  }
+}

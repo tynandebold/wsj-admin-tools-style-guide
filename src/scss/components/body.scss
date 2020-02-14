@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--dj-grey);
+  color: var(--dj-black);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.15em;
+}
+
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 1.45em;
+  margin: 0 0 15px;
+  max-width: 770px;
+}
