@@ -1,4 +1,4 @@
-# WSJ Admin Tools Theme
+# WSJ Admin Tools Style Guide
 
 ## Setup
 
