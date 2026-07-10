@@ -28,7 +28,7 @@ function bindEvents() {
 function toggleMarkup(event){
   event.preventDefault();
 
-  $(this).next().next('pre').toggleClass('show');
+  $(event.currentTarget).next().next('pre').toggleClass('show');
 }
 
 function toggleInstrux(event) {
